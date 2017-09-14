@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+	{% block content %}
+	<div class="container main-size">
+
+	<!-- SLIDER -->
+		{% block slider %}
+			{% include "../includes/slider.html" %}
+		{% endblock %}
+
+
+		<!-- CUADRO DE ENTRADA -->
+		<!-- <div class="container login-class">
+			<button class="btn btn-primary style-boton inicio" type="submit">Iniciar Sesión</button>
+			<button type="button" class="btn btn-outline-success style-boton registro">Registrarse</button>
+		</div> -->
+
+
+		<!-- CUADRO DE REGISTRO -->
+<!-- 		<div class="container login-class">
+			<input class="form-control cuadroTexto reg-nombre" id="exampleInputPassword1" placeholder="Nombre">
+			<input class="form-control cuadroTexto" id="exampleInputPassword1" placeholder="Usuario">
+			<input class="form-control cuadroTexto reg-contraseña" id="exampleInputPassword1" placeholder="Contraseña">
+			<button type="button" class="btn btn-outline-success style-boton registro">Regístrate</button>
+		</div> -->
+
+
+		<!-- CUADRO DE LOGIN -->	
+		<div class="container login-class">
+			<input class="form-control cuadroTexto reg-usuario" id="exampleInputPassword1" placeholder="Usuario">
+			<input class="form-control cuadroTexto reg-contraseña" id="exampleInputPassword1" placeholder="Contraseña">
+			<button type="button" class="btn btn-outline-success style-boton registro">Entrar</button>
+			<p>budfbusbubdbg  <a href="/registro">REGISTRATE</a></p>
+		</div>
+
+	</div>
+	{% endblock %}		

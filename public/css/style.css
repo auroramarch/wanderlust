@@ -1,0 +1,171 @@
+/*INICIO*/
+.main-size{
+	width: 100%;
+	padding: 0px;
+	background-color: black;
+}
+
+/*Slider*/
+.slider-size{
+	width: 100%;
+	height: 700px;
+}
+
+.bgd {
+	z-index: -1000;
+	display: inline-flex;
+	align-content: center;
+}
+
+/*Cuadros de entrada y registro*/
+.login-class{
+	background-color:rgba(144, 201, 40, 0.5);
+	width: 300px;
+	height: 350px;
+	align-content: center;
+	z-index: 1000;
+	position: absolute;
+	top: 250px;
+	left:500px;
+	border-radius: 25px;
+}
+
+.cuadroTexto{
+	width: 250px;
+	height: 50px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	border-radius: 15px;
+	font-family: 'Delius', cursive;
+}
+
+.reg-nombre{
+	margin-top: 45px;
+}
+
+.reg-contraseña{
+	margin-bottom: 35px;
+}
+
+.reg-usuario{
+	margin-top: 85px;
+}
+
+.style-boton{
+	background-color: red;
+	width: 150px;
+	height: 50px;
+	margin-left: 60px;
+	font-family: 'Delius', cursive;
+	font-size: 20px;
+	border-radius: 15px;
+}
+
+.inicio{
+	margin-top: 110px;
+	margin-bottom: 30px;
+}
+
+/*PRINCIPAL*/
+/*Header*/
+.bg{
+	background-color:#DACFB6;
+	width: 100%;
+}
+
+/*Cabecera*/
+.cabecera{
+	background-color: #DACFB6;
+	width: 100%;
+	height: 200px;
+}
+
+/*Perfil= foto+nombre*/
+.perfil{
+	background-color: #DACFB6;
+	width: 500px;
+	height: 200px;
+}
+
+.fotoPerfil{
+	background-color: #DACFB6;
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+	border-radius: 25%;
+}
+
+.usuario{
+	background-color: #DACFB6;
+	width: 450px;
+	height: 200px;
+}
+.nombre{
+	margin-top: 60px;
+	margin-left: 15px;
+}
+
+/*Busqueda y follows*/
+.busca{
+	float: right;
+}
+
+.busqueda{
+	margin-top: 30px;
+	width: 300px;
+	margin-left: 200px;
+	border-radius: 15px;
+}
+
+.botones{
+	float:right;
+}
+.estilo-boton{
+	width: 150px;
+	height: 40px;
+	margin: 10px 15px;
+	border-radius: 15px;
+}
+
+/*Mapa y cajon de fotos*/
+.caja-mapa{
+	background-color: #DACFB6;
+	width: 100%;
+}
+#map{
+	margin-left: 50px;
+}
+
+.caja-foto{
+	border-color: black;
+	height: 500px;
+	width: 200px;
+	background-color: red;
+	margin-left: 30px;
+	margin-right: 25px;
+	float: right;
+}
+.titulo-fotos{
+	margin:20px;
+}
+.fotografia{
+	padding-left: 22px;
+}
+.recuadro-foto{
+
+	width: 75px;
+	height: 75px;
+	margin:10px;
+}
+
+/*Modal*/
+.imgGrande{
+	width: 100%;
+	height: 100%;
+}
+
+.modal-body{
+	width: 500px;
+	height: 500px;
+
+}

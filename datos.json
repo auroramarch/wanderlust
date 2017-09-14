@@ -1,0 +1,253 @@
+
+	{
+		"usuarios":[
+			{
+				"name": "Juan Garcia Perez",
+				"user": "juanitoGP",
+				"password": "a123",
+				"profile":"https://images.r.cruisecritic.com/features/2016/01/cruise-phone-usage-hero.jpg",
+				"idUser": "1"
+			},
+			{
+				"name": "Antonio Munoz Garcia",
+				"user": "antonioMG",
+				"password": "b123",
+				"profile":"http://4.bp.blogspot.com/-sh6T5BVvKdQ/Tzlwns1NVUI/AAAAAAAAAvQ/GhDaMr6kwV8/s1600/Corbis-42-30942809.jpg",
+				"idUser": "2"
+			},
+			{
+				"name": "Laura Gomez Muñoz",
+				"user": "LauraGM",
+				"password": "c123",
+				"profile":"http://pbs.twimg.com/media/Cj-tar3VEAEcXGZ.jpg",
+				"idUser": "3"
+			},
+			{
+				"name": "Cristina Ruiz Gomez",
+				"user": "Cristina RG",
+				"password": "d123",
+				"profile":"http://cdn2.upsocl.com/wp-content/uploads/immujer/2015/02/sds.jpg",
+				"idUser": "4"
+			},
+			{
+				"name": "Pedro Roman Ruiz",
+				"user": "pedroRR",
+				"password": "f123",
+				"profile":"http://cdn.gq.com.mx/uploads/images/thumbs/201546/los_looks_para_el_hombre_viajero_5667_620x413.jpg",
+				"idUser": "5"
+			}
+		],
+
+	
+
+
+
+
+
+		"fotos": [
+				{
+					"idUser":"1",
+					"url":"https://cdn.vox-cdn.com/thumbor/M0HG9Z8nm07HYSJnps-FWVjMCd8=/0x0:5184x3456/1200x900/filters:focal(2178x1314:3006x2142)/cdn.vox-cdn.com/uploads/chorus_image/image/55975861/buenos_aires__heatmap.0.jpg",
+					"description":"foto en buenos aires",
+					"location":[ { "latitude": "-34.606137",
+									 "longitude": "-58.355031" 
+									}]
+				},
+				{
+					"idUser":"1",
+					"url":"http://cr04.critica.com.pa/sites/default/files/caminito-buenos-aires-kickfeed.jpg",
+					"description":"foto en buenos aires",
+					"location":[ { "latitude": "-34.606137",
+									 "longitude": "-58.355031" 
+									}]
+				},
+				{
+					"idUser":"1",
+					"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfjnsCO1og5-ITHdoEniwlRdLfGX7lhH3Li9GHbPkBTJEehsAi",
+					"description":"foto en chicago",
+					"location":[ { "latitude": "41.875331",
+									 "longitude": "-87.607033" 
+									}]
+				},
+				{
+					"idUser":"1",
+					"url":"http://www.wanderonworld.com/wp-content/uploads/2015/04/que-ver-moscu-museo-estatal-historia-1.jpg",
+					"description":"foto en moscu",
+					"location":[ { "latitude": "55.773243",
+									 "longitude": "37.596683" 
+									}]
+				},
+				{
+					"idUser":"1",
+					"url":"https://cdn.rbth.com/1280x720/19x23/1281x720/web/es-rbth/images/2016-07/top/plaza_roja_g1exdk_1300.jpg",
+					"description":"foto en moscu",
+					"location":[ { "latitude": "55.773243",
+									 "longitude": "37.596683" 
+									}]
+				},
+				{
+					"idUser":"2",
+					"url":"http://cdn3.upsocl.com/wp-content/uploads/2015/02/portadaparis.jpg",
+					"description":"foto en paris",
+					"location":[ { "latitude": "48.857031",
+									  "longitude": " 2.35358" 
+									}]
+				},
+				{
+					"idUser":"2",
+					"url":"http://junelemon.com/wp-content/uploads/2014/02/paris2.jpg",
+					"description":"foto en paris",
+					"location":[ { "latitude": "48.857031",
+									  "longitude": " 2.35358" 
+									}]
+				},
+				{
+					"idUser":"2",
+					"url":"http://losviajesdedomi.com/wp-content/uploads/2014/08/pekin9-552x600.jpg",
+					"description":"foto en pekin",
+					"location":[ { "latitude": "39.910111",
+									 "longitude": "116.393300" 
+									}]
+				},
+				{
+					"idUser":"2",
+					"url":"http://www.luxurysafarilodges.com/img/Kenya/4-Private-Kenya-Guided-Safaris.jpg",
+					"description":"foto en kenia",
+					"location":[ { "latitude": "0.571555",
+									 "longitude": "37.582810" 
+									}]
+				},
+				{
+					"idUser":"2",
+					"url":"http://www.turismokenia.com/imagenes/upload/image/safari2.jpg",
+					"description":"foto en kenia",
+					"location":[ { "latitude": "0.571555",
+									 "longitude": "37.582810" 
+									}]
+				},
+				{
+					"idUser":"3",
+					"url":"https://www.visitoslo.com/Images/Bilder%20Oslo/Aktiviteter/syklister-Aker-Brygge-foto-VisitOSLO-Rod-Costa.jpg?t=ScaleDownToFill%7C704x352&ts=21ouTs8roC2MYcHUilR6%2FQQIdz4%3D",
+					"description":"foto en oslo",
+					"location":[ { "latitude": "59.915472",
+									 "longitude": "10.754898" 
+									}]
+				},
+				{
+					"idUser":"3",
+					"url":"https://i0.wp.com/must-visit-destinations.com/wp-content/uploads/2016/11/Tourist-Attractions-in-Norway-4.jpg?resize=800%2C571",
+					"description":"foto en oslo",
+					"location":[ { "latitude": "59.915472",
+									 "longitude": "10.754898" 
+									}]
+				},
+				{
+					"idUser":"3",
+					"url":"http://www.globalblue.com/destinations/norway/article320470.ece/BINARY/aker_brygge_oslo.jpg",
+					"description":"foto en oslo",
+					"location":[ { "latitude": "59.915472",
+									 "longitude": "10.754898" 
+									}]
+				},
+				{
+					"idUser":"3",
+					"url":"http://blog.kuoni.es/wp-content/uploads/vestimentas.jpg",
+					"description":"foto en kenia",
+					"location":[ { "latitude": "0.571555",
+									 "longitude": "37.582810" 
+									}]
+				},
+				{
+					"idUser":"3",
+					"url":"https://lh3.googleusercontent.com/-PPGWL6ETg_0/Vo6c07K70II/AAAAAAAAHRs/cN-x0JsOPa8/s800-Ic42/pekin_shopping.jpg",
+					"description":"foto en pekin",
+					"location":[ { "latitude": "39.910111",
+									 "longitude": "116.393300" 
+									}]
+				},
+				{
+					"idUser":"4",
+					"url":"https://4.bp.blogspot.com/-HSmxGTQWSL4/VtgSa6MCiKI/AAAAAAAAiWU/llhRFBrB8b8/s1600/Los%2Bmusicales%2Ben%2BMadrid%252C%2Bturismo.jpg",
+					"description":"foto en madrid",
+					"location":[ { "latitude": "40.42219",
+									 "longitude": " -3.705639" 
+									}]
+				},
+				{
+					"idUser":"4",
+					"url":"http://www.diarioya.es/store/turismo-en-Madrid.jpg",
+					"description":"foto en madrid",
+					"location":[ { "latitude": "40.42219",
+									 "longitude": " -3.705639" 
+									}]
+				},
+				{
+					"idUser":"4",
+					"url":"http://espanol.miamiandbeaches.com/-/media/Images/MiamiandBeaches/Itineraries/ExploreMiamiBeach/itineraries-explore-miami-beach-452x406.jpg",
+					"description":"foto en miami",
+					"location":[ { "latitude": "25.76384",
+									 "longitude": " -80.192039" 
+									}]
+				},
+				{
+					"idUser":"4",
+					"url":"https://www.ecestaticos.com/imagestatic/clipping/b10/304/b10304c8581ef2146b5f53279b54c381/el-miami-mas-alternativo-de-ruta-por-los-rincones-que-marcan-tendencia.jpg?mtime=1466513305",
+					"description":"foto en miami",
+					"location":[ { "latitude": "25.76384",
+									 "longitude": " -80.192039" 
+									}]
+				},
+				{
+					"idUser":"4",
+					"url":"https://media-cdn.tripadvisor.com/media/photo-s/01/0a/98/5b/london.jpg",
+					"description":"foto en londres",
+					"location":[ { "latitude": "51.508653",
+									 "longitude": " -0.100257" 
+									}]
+				},
+				{
+					"idUser":"5",
+					"url":"http://nowboarding.com.br/wp-content/uploads/2013/03/Londres.jpg",
+					"description":"foto en londres",
+					"location":[ { "latitude": "51.508653",
+									 "longitude": " -0.100257" 
+									}]
+
+				},
+				{
+					"idUser":"5",
+					"url":"http://www.viajarxeuropa.com/wp-content/uploads/2015/03/LONDON-EYE.jpg",
+					"description":"foto en londres",
+					"location":[ { "latitude": "51.508653",
+									 "longitude": " -0.100257" 
+									}]
+
+				},
+				{
+					"idUser":"5",
+					"url":"https://media.rbth.com/rbthmedia/images/all/2015/09/02/MOSCOW/5.jpg",
+					"description":"foto en moscu",
+					"location":[ { "latitude": "55.773243",
+									 "longitude": "37.596683" 
+									}]
+				},
+				{
+					"idUser":"5",
+					"url":"https://upload.wikimedia.org/wikipedia/commons/6/67/Jardin_vertical_del_obelisco_Buenos_Aires_1.jpg",
+					"description":"foto en buenos aires",
+					"location":[ { "latitude": "-34.606137",
+									 "longitude": "-58.355031" 
+									}]
+				},
+				{
+					"idUser":"5",
+					"url":"https://cache-graphicslib.viator.com/graphicslib/thumbs360x240/11143/SITours/tour-de-san-isidro-y-delta-del-tigre-para-grupos-peque-os-in-buenos-aires-382027.jpg",
+					"description":"foto en buenos aires",
+					"location":[ { "latitude": "-34.606137",
+									 "longitude": "-58.355031" 
+									}]
+				}
+
+
+			]
+	}
