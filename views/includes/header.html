@@ -19,9 +19,35 @@
 						<a href="" data-toggle="modal" data-target="#uploadModal">
 							<img src="images/sube.png" alt="" class="icono-subir">
 						</a>
+						<a href="" data-toggle="modal" data-target="#profileModal">
+							<img src="images/camara.png" alt="" class="icono-camara">
+						</a>
 					</div>
 				</div>
 			</div>
+
+			<!-- BUSQUEDA Y FOLLOWS -->
+			<div class="col-5">
+				<div class="row busca full-width">
+					<input type="text" class="form-control busqueda" id="buscador" placeholder="Buscar">
+					<button id="logout">Desconectar</button>
+				</div>
+
+			  	<div class="row usuario-buscado full-width" id="resultado-busqueda" hidden>
+			  		<!-- <div class="row caja-busquedas" id="caja-busquedas-oculta" hidden>
+				  		<div class="foto-usuario-buscado"><img src="" alt=""></div>
+				  		<div class="nombre-usuario-buscado"></div>
+			  		</div>  -->
+			  	</div>
+			</div>
+
+			<div class="col-1"></div>
+	</header>
+
+
+			<!--MODALES -->
+
+
 			<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
@@ -47,21 +73,22 @@
 			</div>
 
 
-
-
-
-			<!-- BUSQUEDA Y FOLLOWS -->
-			<div class="col-5">
-				<div class="row form-group busca">
-					<input type="text" class="form-control busqueda" id="buscador" placeholder="Buscar">
-					<button id="logout"></button>
-				</div>
-
-			  	<div class="row botones">
-			  		<button type="button" class="btn btn-outline-success estilo-boton">Seguidores</button>
-			  		<button type="button" class="btn btn-outline-success estilo-boton">Seguidos</button>
-			  	</div>
+			<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				    		<label class="custom-file">
+							  <input type="file" id="profileFile" class="custom-file-input">
+							  <img src="images/camara.png" alt="" class="icono-camara">
+							  <button class="btn btn-primary" id="saveProfile">Guardar cambios</button>
+							</label>
+				      </div>
+			    </div>
+			  </div>
 			</div>
-
-			<div class="col-1"></div>
-	</header>

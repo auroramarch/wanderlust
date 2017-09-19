@@ -33,4 +33,10 @@ app.get("/dashboard*", function(req, res){
 	res.render("layouts/Dashboard.html");
 });
 
+app.get("/user/:name", function(req, res){
+	res.render("layouts/Dashboard.html",{
+		user: req.params.name
+	});
+});
+
 app.listen(3000);

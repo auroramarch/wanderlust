@@ -107,6 +107,11 @@
 	height: 40px;
 
 }
+
+.icono-camara{
+	width:40px;
+	height: 40px;
+}
 .sube-foto{
 	margin-top: 30px,
 }
@@ -124,8 +129,41 @@
 .busqueda{
 	margin-top: 30px;
 	width: 300px;
-	margin-left: 200px;
+	margin-bottom: 10px;
 	border-radius: 15px;
+}
+
+#logout {
+	height: 40px;
+}
+
+.full-width {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+.usuario-buscado{
+	height: 100px;
+	background-color: white;
+	margin-top: 10px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.caja-busquedas{
+	margin: 10px;
+	height: 40px;
+}
+.foto-usuario-buscado{
+	width: 40px;
+	height: 40px;
+}
+
+.nombre-usuario-buscado{
+	background-color: blue;
+	width: 180px;
+	height: 40px;
 }
 
 .botones{
