@@ -1,3 +1,4 @@
+// Initialize Google Maps
 	var map = new google.maps.Map (document.getElementById('map'),{
 			zoom:2, 
 			center: new google.maps.LatLng(21.815316,-6.633916),
@@ -8,8 +9,6 @@
 	
 
 	localizaFoto();
-
-
 	function localizaFoto (){
 
 		$.ajax({

@@ -28,6 +28,7 @@
 	top: 250px;
 	left:500px;
 	border-radius: 25px;
+	border: 1px solid red;
 }
 
 .cuadroTexto{
@@ -100,9 +101,19 @@
 	width: 450px;
 	height: 200px;
 }
+
+.icono-subir{
+	width:40px;
+	height: 40px;
+
+}
+.sube-foto{
+	margin-top: 30px,
+}
 .nombre{
 	margin-top: 60px;
 	margin-left: 15px;
+	margin-bottom: 10px;
 }
 
 /*Busqueda y follows*/

@@ -8,29 +8,17 @@
 		{% endblock %}
 
 
-		<!-- CUADRO DE ENTRADA -->
-		<!-- <div class="container login-class">
-			<button class="btn btn-primary style-boton inicio" type="submit">Iniciar Sesión</button>
-			<button type="button" class="btn btn-outline-success style-boton registro">Registrarse</button>
-		</div> -->
-
-
-		<!-- CUADRO DE REGISTRO -->
-<!-- 		<div class="container login-class">
-			<input class="form-control cuadroTexto reg-nombre" id="exampleInputPassword1" placeholder="Nombre">
-			<input class="form-control cuadroTexto" id="exampleInputPassword1" placeholder="Usuario">
-			<input class="form-control cuadroTexto reg-contraseña" id="exampleInputPassword1" placeholder="Contraseña">
-			<button type="button" class="btn btn-outline-success style-boton registro">Regístrate</button>
-		</div> -->
-
-
 		<!-- CUADRO DE LOGIN -->	
 		<div class="container login-class">
-			<input class="form-control cuadroTexto reg-usuario" id="exampleInputPassword1" placeholder="Usuario">
-			<input class="form-control cuadroTexto reg-contraseña" id="exampleInputPassword1" placeholder="Contraseña">
-			<button type="button" class="btn btn-outline-success style-boton registro">Entrar</button>
+			<input class="form-control cuadroTexto reg-usuario" id="email" placeholder="E-mail">
+			<input class="form-control cuadroTexto reg-contraseña" id="password" placeholder="Contraseña">
+			<button type="button" class="btn btn-outline-success style-boton registro" id="entrar">Entrar</button>
 			<p>budfbusbubdbg  <a href="/registro">REGISTRATE</a></p>
 		</div>
 
 	</div>
 	{% endblock %}		
+
+	{% block customjs %}
+	<script src="/js/login.js" ></script>
+	{% endblock %}
