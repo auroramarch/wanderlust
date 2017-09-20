@@ -9,6 +9,10 @@
   };
    firebase.initializeApp(config);
 
+   $(".icono-camara-modal").on("click", function(){
+   		$("#file").click();
+   });
+
    var useremail = "";
    var currentLocation = window.location.href;
 	var currentPath = currentLocation.split(":3000/")[1].split("/")[0];
@@ -73,7 +77,7 @@
 
 		                        google.maps.event.addListener (marker, 'click', (function (marker,i){
 		                            return function(){
-		                                galeria(marker.getPosition().lat(), marker.getPosition().lng())
+		                                galeria(emailUsuario, marker.getPosition().lat(), marker.getPosition().lng())
 		                            }
 		                        }) (marker, i))
 		                    }
@@ -100,7 +104,7 @@
                     for(var album in data.fotos[foto].albums){
                         var latitude = data.fotos[foto].albums[album].location[0].latitude;
                         var longitude = data.fotos[foto].albums[album].location[0].longitude;
-
+                        console.log("AAA: " + data.fotos[foto].albums[album])
                         console.log(latitude);
                         console.log(longitude);
 
@@ -113,7 +117,7 @@
 
                         google.maps.event.addListener (marker, 'click', (function (marker,i){
                             return function(){
-                                galeria(marker.getPosition().lat(), marker.getPosition().lng())
+                                galeria(useremail, marker.getPosition().lat(), marker.getPosition().lng())
                             }
                         }) (marker, i))
                     }
@@ -121,23 +125,22 @@
             }
         }
     })
-};   
+}; 
 
-
-function galeria (lat, long){
+function galeria (email, lat, long){
     $('#fotografia').empty();
     $.ajax({
         url:'https://wanderlust-3c1f8.firebaseio.com/data.json',
         dataType: 'json',
         success: function (data){
             for(var foto in data.fotos){
-                if (data.fotos[foto].email == useremail){
+                if (data.fotos[foto].email == email){
                     for(var album in data.fotos[foto].albums){
                         if(parseInt(data.fotos[foto].albums[album].location[0].latitude) == parseInt(lat) && parseInt(data.fotos[foto].albums[album].location[0].longitude) == parseInt(long)){
                             var imagenes= data.fotos[foto].albums[album].url;
                             console.log(imagenes);
                             var marco= $('#fotografia');
-                            var recuadro= '<div class="recuadro-foto"><a class="imgGrande" data-toggle="modal" data-target="#myModal"><img class="recuadro-foto" src="'+imagenes+'" alt=""></a></div>'
+                            var recuadro= '<div class="recuadro-foto"><a class="imgGrande" data-imageid="'+album+'" data-userid="'+foto+'" data-toggle="modal" data-target="#myModal"><img class="recuadro-foto" src="'+imagenes+'" alt=""></a></div>'
                             marco.append(recuadro);
                         }
                     }
@@ -147,11 +150,56 @@ function galeria (lat, long){
 
             $('.imgGrande').on("click", function(){
                 var imgOriginal= $(this).find('img').attr('src');
+                var id = $(this).attr("data-imageid");
+                var userid = $(this).attr("data-userid");
                 $('#myModal .modal-body img').attr('src', imgOriginal)
+                $('#myModal .modal-body img').attr('data-imageid', id)
+                $('#myModal .modal-body img').attr('data-userid', userid)
+
+            })
+
+            $('#trash').on("click", function(){
+            	var id = $('#myModal .modal-body img').attr('data-imageid');
+            	var userid = $('#myModal .modal-body img').attr('data-userid');
+            	firebase.database().ref("/data/fotos/" + userid + "/albums/" + id).remove();
+            	
+            		setTimeout(function(){
+  						window.location.reload();
+  					}, 600)	
             })
         }
     })
-}
+}  
+
+
+// function galeria (lat, long){
+//     $('#fotografia').empty();
+//     $.ajax({
+//         url:'https://wanderlust-3c1f8.firebaseio.com/data.json',
+//         dataType: 'json',
+//         success: function (data){
+//             for(var foto in data.fotos){
+//                 if (data.fotos[foto].email == useremail){
+//                     for(var album in data.fotos[foto].albums){
+//                         if(parseInt(data.fotos[foto].albums[album].location[0].latitude) == parseInt(lat) && parseInt(data.fotos[foto].albums[album].location[0].longitude) == parseInt(long)){
+//                             var imagenes= data.fotos[foto].albums[album].url;
+//                             console.log(imagenes);
+//                             var marco= $('#fotografia');
+//                             var recuadro= '<div class="recuadro-foto"><a class="imgGrande" data-toggle="modal" data-target="#myModal"><img class="recuadro-foto" src="'+imagenes+'" alt=""></a></div>'
+//                             marco.append(recuadro);
+//                         }
+//                     }
+//                 }
+//             }
+
+
+//             $('.imgGrande').on("click", function(){
+//                 var imgOriginal= $(this).find('img').attr('src');
+//                 $('#myModal .modal-body img').attr('src', imgOriginal)
+//             })
+//         }
+//     })
+// }
 
 
 function miPerfil (){
@@ -208,7 +256,11 @@ function miPerfil (){
   								location.push(locationObj);
   								console.log(location)
   								crearNodoUrl(downloadURL, location);
-		                	})	
+
+  								setTimeout(function(){
+  									window.location.reload();
+  								}, 600)
+		                	})
 	                }
 	            }
 	        }
@@ -276,6 +328,7 @@ function busquedaUser(){
 		$('#buscador').on("keydown",function(event){
 
 			if(event.keyCode == 13){
+				$("#resultado-busqueda").empty();
 				var busqueda= $('#buscador').val();
 				console.log("aaaaaaa")
 				$.get('https://wanderlust-3c1f8.firebaseio.com/data.json',function(data){

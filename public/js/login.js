@@ -74,8 +74,7 @@ function init(){
   	var fts= fotos.push();
 
   	fts.set({
-  		email: email.val(),
-  		albums: [""]
+  		email: email.val()
   	});
 
   	console.log(usuarios)

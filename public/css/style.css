@@ -2,8 +2,8 @@
 .main-size{
 	width: 100%;
 	padding: 0px;
-	background-color: black;
 }
+
 
 /*Slider*/
 .slider-size{
@@ -19,7 +19,7 @@
 
 /*Cuadros de entrada y registro*/
 .login-class{
-	background-color:rgba(144, 201, 40, 0.5);
+	background-color:rgba(77, 109, 67, 0.8);
 	width: 300px;
 	height: 350px;
 	align-content: center;
@@ -28,7 +28,7 @@
 	top: 250px;
 	left:500px;
 	border-radius: 25px;
-	border: 1px solid red;
+	border: 3px solid #4D6D43;
 }
 
 .cuadroTexto{
@@ -37,7 +37,8 @@
 	margin-bottom: 15px;
 	margin-left: 10px;
 	border-radius: 15px;
-	font-family: 'Delius', cursive;
+	font-family: 'Fauna One', serif;
+	border: 2px solid #4D6D43;
 }
 
 .reg-nombre{
@@ -53,77 +54,161 @@
 }
 
 .style-boton{
-	background-color: red;
+	background-color: #AD8861;
 	width: 150px;
 	height: 50px;
 	margin-left: 60px;
-	font-family: 'Delius', cursive;
+	font-family: 'Fauna One', serif;
 	font-size: 20px;
 	border-radius: 15px;
-}
-
-.inicio{
-	margin-top: 110px;
-	margin-bottom: 30px;
+	border: 1px solid #DACFB6;
+	margin-bottom: 15px;
 }
 
 /*PRINCIPAL*/
+body{
+background-image: url('/images/bgmadera.jpg');	
+}
+
 /*Header*/
 .bg{
-	background-color:#DACFB6;
 	width: 100%;
 }
 
 /*Cabecera*/
 .cabecera{
-	background-color: #DACFB6;
+	background-color: rgba(77, 109, 67, 0.0);
 	width: 100%;
 	height: 200px;
 }
 
 /*Perfil= foto+nombre*/
 .perfil{
-	background-color: #DACFB6;
+	background-color: rgba(77, 109, 67, 0.0);
 	width: 500px;
 	height: 200px;
 }
 
+h2{
+	font-size: 40px;
+	font-family: 'Fauna One', serif;
+	font-weight: bold; 
+}
+
 .fotoPerfil{
-	background-color: #DACFB6;
-	width: 150px;
-	height: 150px;
+	background-color: rgba(77, 109, 67, 0.0);
+	width: 125px;
+	height: 125px;
 	margin-top: 30px;
 	border-radius: 25%;
+	border: 3px solid #4D6D43;
 }
 
 .usuario{
-	background-color: #DACFB6;
+	background-color: rgba(77, 109, 67, 0.0);
 	width: 450px;
 	height: 200px;
 }
 
 .icono-subir{
-	width:40px;
+	width:45px;
 	height: 40px;
+	margin-left: 80px;
+
+}
+.ajustes{
+	padding-right: 0px;
+}
+
+.icono-ajustes{
+	width:30px;
+	height: 30px;
+	float: right;
+	margin-top: 20px;
 
 }
 
-.icono-camara{
-	width:40px;
-	height: 40px;
-}
 .sube-foto{
 	margin-top: 30px,
 }
+
 .nombre{
 	margin-top: 60px;
 	margin-left: 15px;
 	margin-bottom: 10px;
 }
 
+.modal-content{
+	background-color: #DACFB6;
+	border-radius: 25px;
+	border: 1px solid #4D6D43;
+	font-family:'Fauna One', serif;
+
+}
+
+#saveProfile{
+	background-color: #AD8861;
+	height: 50px;
+	font-family: 'Fauna One', serif;
+	font-size: 15px;
+	border-radius: 15px;
+	border: 1px solid #DACFB6;
+	margin-bottom: 15px;
+
+}
+
+.modal-profile{
+	height: 100px !important;
+}
+
+#profileFile{
+	width: 50px;
+}
+
+.icono-ajustes-modal{
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-left: 25px;
+	margin-top: 8px;
+}
+
+.icono-camara-modal{
+	
+	width: 35px;
+	height: 35px;
+	margin-left: 25px;
+}
+
+.modal-subir{
+	height: 170px !important;
+}
+
+
+#nombreFoto{
+	width: 200px;
+	font-family: 'Fauna One', serif;
+	border-radius: 15px;
+	border: 1px solid #4D6D43;
+
+}
+
+.eligeFoto{
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 300px;
+}
+
+#subirFoto{
+	background-color: #AD8861;
+	font-family: 'Fauna One', serif;
+	font-size: 15px;
+	border-radius: 15px;
+	border: 1px solid #DACFB6;
+}
 /*Busqueda y follows*/
 .busca{
-	float: right;
+	margin-left: 100px;
 }
 
 .busqueda{
@@ -131,24 +216,24 @@
 	width: 300px;
 	margin-bottom: 10px;
 	border-radius: 15px;
-}
-
-#logout {
-	height: 40px;
+	border: 1px solid #4D6D43;
+	font-family: 'Fauna One', serif;
+	background-color: #F2F2E6;
 }
 
 .full-width {
-	margin: 0;
 	width: 100%;
 	padding: 0;
 }
 
 .usuario-buscado{
 	height: 100px;
-	background-color: white;
+	background-color: rgba(173, 136, 97, 0.5);
 	margin-top: 10px;
 	overflow: auto;
 	overflow-x: hidden;
+	border-radius: 20px;
+	border: 1px solid #4D6D43;
 }
 
 .caja-busquedas{
@@ -158,44 +243,57 @@
 .foto-usuario-buscado{
 	width: 40px;
 	height: 40px;
+	border-radius: 10px;
+	margin-right: 20px;
+
 }
 
 .nombre-usuario-buscado{
-	background-color: blue;
 	width: 180px;
 	height: 40px;
+	margin-top: 10px;
+	font-family: 'Fauna One', serif;
+	font-weight: bold;
+
 }
 
-.botones{
-	float:right;
-}
-.estilo-boton{
-	width: 150px;
+#logout{
+	margin-top: 20px;
+	width: 40px;
 	height: 40px;
-	margin: 10px 15px;
 	border-radius: 15px;
+	background-color: #F2F2E6;
+	border: 2px solid #AD8861;
 }
 
 /*Mapa y cajon de fotos*/
 .caja-mapa{
-	background-color: #DACFB6;
+	background-color: rgba(77, 109, 67, 0.0);
 	width: 100%;
+	height: 600px;
 }
 #map{
 	margin-left: 50px;
+	border: 3px solid #4D6D43;
+	border-radius: 20px;
 }
 
 .caja-foto{
 	border-color: black;
 	height: 500px;
 	width: 200px;
-	background-color: red;
+	background-image: url('/images/bgblock.png');
 	margin-left: 30px;
 	margin-right: 25px;
 	float: right;
+	border-radius: 15px;
+	border: 1px solid #F2F2E6;
 }
 .titulo-fotos{
-	margin:20px;
+	margin-top:35px;
+	margin-left: 80px;
+	font-size: 30px;
+	font-family: 'Fauna One', serif; 
 }
 .fotografia{
 	padding-left: 22px;
@@ -205,6 +303,19 @@
 	width: 75px;
 	height: 75px;
 	margin:10px;
+	border-radius: 15px;
+
+}
+
+/*FOOTER*/
+footer > p{
+	font-family:'Fauna One', serif;
+	font-size: 20px;
+	text-align: center;
+	color: #4a2b00;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px #DACFB6;
+
 }
 
 /*Modal*/
@@ -217,4 +328,8 @@
 	width: 500px;
 	height: 500px;
 
+}
+
+.papelera{
+	margin-left: 280px;
 }
